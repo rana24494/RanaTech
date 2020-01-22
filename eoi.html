@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="description" content="creating web applications"/>
+<title>retrieving records to html</title>
+</head>
+
+<body>
+    
+  <style>
+  body {background-color: #CDF0EB;
+  }
+  h1   {color: #9CAFB9;
+    margin-top: 35px;
+	margin-bottom: 0;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic; 
+  }
+    input::placeholder {
+  color: green;
+  font-size: 1.2em;
+  font-style: italic;
+}
+    </style>
+ <h1>Retrive Applicant Records</h1>   
+<form id="eoi" action="record.php" method="post"><fieldset>
+    
+<legend>List All EOI</legend>
+	<input type="submit" name="eoi" value="eoi"/></fieldset>
+</form>
+
+<form id="Jref" action="reference.php"  method="post">
+    <fieldset>
+<legend>check with reference number</legend>
+<label for="Jreference">Job reference number:</label>
+			<input type="text"  name="Jreference"  size="12" maxlength="5" placeholder="Enter SSE94 OR SSE95 here.."  required /><br /><br />
+			<input type="submit" name="Jref" value="Jreference" ></fieldset>
+</form>
+</body>
+</html>

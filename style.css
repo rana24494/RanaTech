@@ -1,0 +1,144 @@
+*/
+filename: [layout.css]
+author: [Ramanaidu]
+created: [30/08/2017]
+description: [html files it refers to (if know)]
+*/ 
+  /* This is used for links */
+
+/* This is used for menu back ground */
+
+/* This is used for heading back ground */
+
+	/* This is used for fooer back ground 
+	 
+/* This is used for body background */
+
+
+/* This is used for Table back ground */
+  th {
+    background-color: #4CAF50;
+    color: white;
+}
+#job {
+    
+  background-color: white;
+    color: black;
+    border: 0.1px solid green;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: underline blue;
+	border-radius: 20px;  
+}
+
+  
+/* This is used for heading background */	
+h1{
+	   margin: 0.2em;
+	   padding: 1.5em 10em;
+	   background-position: right;
+        background-color: #C4DCB9;			   
+	   text-align:center;
+	   
+	   }
+	/* This is used for highh lighting header */
+  header{
+	   border-radius: 20px;
+	   margin: 0.001em;
+	   padding: 0.1em;
+	   	background-image: url(images/logo.jpg) ;
+		background-color: lightblue;
+		background-position: right; 
+	   float: left;
+	 }
+	a  {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-radius: 20px;
+	
+}
+
+
+/* mouse over link */
+a:hover {
+  color: green;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}  aside{
+	width:25%;
+	padding:0.1em;
+    border-color: PaleGreen;
+	border-style:solid;
+	float: right;
+   }
+   .fig{
+    display: block;
+    margin: auto;
+    width: 40%;	
+}
+ #head {
+    font-style: italic;
+}
+img {
+	display: block;
+	border: 0.5px solid green;
+	float: right;
+	width:auto;
+	margin:auto;
+}
+ input[type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+    border: 0.5px solid green;
+    background-color: #444444;
+}
+/* This is used for body back ground */
+body {
+    background-color: #FCFCFC;
+	 overflow: auto;
+	 
+	 margin:auto;
+    width: auto; 
+    margin-left:30px; 
+    margin-right: auto; 
+    border-radius: 50px;
+    -moz-border-radius: 50px
+
+}
+/* This is used for ltable background */
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+}
+ table,td ,th {
+	 
+
+    border: 1px solid green;
+	border-collapse: collapse;
+	text-align:center;
+}
+footer {
+  position: absolute;
+  left: 70;
+  bottom: 50;
+  width: 97%;
+  background-color: #C4DCB9;
+  color: black;
+  text-align: center;
+}

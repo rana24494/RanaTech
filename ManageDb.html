@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href= "style.css" rel="stylesheet"/>
+	<meta charset="utf-8" />
+	<meta name="description" content="Assignment1" />
+	<meta name="keywords" content="HTML5" />
+	<meta name="author" content="Ramanaidu sureddy"  />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManageDb</title>
+	
+</head>
+<body>
+    <style>fieldset {
+	border:1px solid #999;
+	border-radius:10px;
+	
+}
+legend { 
+  display: block;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: none;
+  color:green;
+  font-family: Arial bold, Helvetica, sans-serif;
+}</style>
+	<header><img src="RANA.gif" alt="RanaTech" width="200" height="100" ></header>
+	<h1><em>RanaTech</em></h1>
+	<nav>
+		<a href="index.html">HOME</a>
+		<a href="jobs.html">JOBS</a>
+		<a href="apply.html">APPLY</a>
+		<a href="about.html">ABOUT</a>
+		<a href="ManageDb.html">MANAGE DATABASE</a>
+ </nav>
+
+<h2>Retrive Applicant Records</h2>   
+<form id="eoi" action="record.php" method="post"><fieldset>
+    <p>Click On Retrive to get all the records of the applicants and check who are applied for a job based on their skills </p>
+<legend>List Of Applicants</legend>
+	<input type="submit" name="eoi" value="Retrive"/></fieldset>
+</form>
+<br/>
+<form id="Jref" action="reference.php"  method="post">
+    <fieldset>
+<legend>Check With Reference Number</legend>
+<p>Check the applicants who are applied for a specific job by reference id </p>
+<label for="Jreference">Job reference number:</label>
+			<input type="text"  name="Jreference"  size="20" maxlength="5" placeholder="Enter SSE94 OR SSE95 here.."  required /><br /><br />
+			<input type="submit" name="Jref" value="Submit" ></fieldset>
+</form>
+<br/>
+<form action="delete.php"  method="post">
+    <fieldset>
+        <legend>Delete Record</legend>
+        <p>Delete Record Based On Their FirstName And LastName Below</p>
+    <label for="firstname">FirstName:</label>
+			<input type="text" name="firstname" size="12" id="firstname" maxlength="20" title="only letters"   required /><br /><br />
+			<label for="lastname">Last Name:</label>
+			<input type="text" name="lastname"  id="lastname" size="12" maxlength="20"  title="only letters"  required /><br /><br />
+						<input type="submit" value="Submit" ></fieldset>
+    
+</form>
+
+<footer>
+<fieldset><legend><b>Contact Details</b></legend>
+  <p>Person : Rama Naidu</p>
+  <p>Mail Your Resume Here: <a id="a" href="mailto:rana24494@gmail.com">Email</a>.</p>
+  </fieldset>
+</footer>
+</body>
+</html>

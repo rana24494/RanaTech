@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Assignment1" />
+    <meta name="keywords" content="HTML5" />
+    <meta name="author" content="Ramanaidu sureddy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB APPLY</title>
+    <script type="text/javascript" src="apply.js">
+	
+    </script>
+    
+</head> 
+</html>
+<body onLoad="settextBox(); loadData();" >
+    <header>
+        <img src="RANA.gif" alt="RanaTech" width="200" height="100">
+    </header>
+    <h1><em>RanaTech</em></h1>
+    <nav>
+
+        <a href="index.html">HOME</a>
+        <a href="jobs.html">JOBS</a>
+        <a href="apply.html">APPLY</a>
+        <a href="about.html">ABOUT</a>
+        <a href="ManageDb.html">MANAGE DATABASE</a>
+    </nav>
+    <fieldset>
+        <legend>
+            <h2>
+                <strong>
+                    <em>FILL YOUR DETAILS</em>
+                </strong>
+            </h2>
+        </legend>
+        <div>
+		
+            <form action="processEOI.php"  method="post";>
+			
+			<label for="Jreference">Job reference number:</label>
+			<input type="text" id="jref" name="Jreference"  size="12" maxlength="5"  required /><br /><br />
+			<label for="firstname">FirstName:</label>
+			<input type="text" name="firstname" size="12" id="firstname" maxlength="20" title="only letters"  onchange="saveData()"  required /><div id="fnamewarn" ></div><br /><br />
+			<label for="lastname">Last Name:</label>
+			<input type="text" name="lastname"  id="lastname" size="12" maxlength="20"  title="only letters"  onchange="saveData()" required /><div id="lnamewarn" ></div><br /><br />
+			<label for="dob">Date of Birth:</label>
+			<input type="text" name="dob" size="12" maxlength="10" placeholder="dd/mm/yyyy" id="dob" required  onchange="saveData()" onkeyup="checkDate()"  /> <div id="datewarn"></div><br />
+			
+			<br />
+			<label for="gender" >Gender:</label>
+			<input type="radio" name="gender" value="male" checked>Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+			<br /><br />
+			<label for="sadress">Street Address:</label>
+			<input type="text" name="sadress" maxlength="40" onchange="saveData()" id="address" title="only letters" required /><div id="adresswarn" ></div>
+                <br /><br />
+			<label for="suburb">Suburb:</label>
+			<input type="text" name="suburb" maxlength="40" id="suburb" onchange="saveData()" title="only letters" required /><div id="suburbwarn" >
+			<br /><br />
+			<label for="state" required>State:</label>
+			<select required id="ddlstate" onchange="saveData()">
+                    <option value="VIC">VIC</option>
+                    <option value="NIC">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+            </select><br /><br />
+			<label for="pcode">PostCode:</label>
+			<input type="text" name="pcode" id="pin" maxlength="4"  title="4 numersonly" onchange="saveData()" onkeyup="checkPin()" required />
+                <br /><div id="pinwarn"></div><br />
+				<label for="email">Email:</label>
+			<input type="text" name="email" id="email" onchange="saveData()" required /><div id="mailwarn" >
+                <br /><br />
+				<label for="pnumber">Phone Number:</label>
+			<input type="text" name="pnumber" maxlength="10" id="pnumber" onchange="saveData()" title="10 numbersonly" required /><div id="numberwarn" >
+                <br /><br />
+				<label for="slist">Skills List:</label> <br />
+				<input type="checkbox" name="Skills list" value="Listning music"   onChange="othersText();">Listning music
+                <input type="checkbox" name="Skills list" value="Surfing on web" onChange="othersText();"> Surfing on web
+                <input type="checkbox" name="Skills list" value="Playing cricket" onChange="othersText();">Playing cricket
+				<input type="checkbox" name="Skills list" id="others" value="Others" onChange="othersText();"  />Others<br /><br />
+                OtherSkillSet:
+                <input  name="Other"  id="txtOthers" required="false" ><div id="textboxwarn" ></div><br /><br />
+                <input type="submit" value="Submit">
+            </form>
+				
+</div>
+
+    </fieldset><br />
+
+    <footer>
+        <fieldset>
+            <legend><b>Contact Details</b></legend>
+            <p>Person : Rama Naidu</p>
+            <p>Mail Your Resume Here: <a href="mailto:rana24494@gmail.com">Email</a></p>
+        </fieldset>
+    </footer>
+
+</body>
+</html>

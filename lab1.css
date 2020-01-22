@@ -1,0 +1,101 @@
+*/
+filename: [layout.css]
+author: [Ramanaidu]
+created: [30/08/2017]
+description: [html files it refers to (if know)]
+*/
+<head>
+<!-- other meta stuff-->  
+<link href="styles/layout.css" rel="stylesheet"/>
+</head> 
+  /* This is used for links */
+	a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-radius: 20px;
+	
+}
+/* This is used for menu back ground */
+a:hover, a:active {
+    background-color: green;
+    color: white;
+}
+/* This is used for heading back ground */
+h1{
+       
+	   border-radius: 20px;
+	   color: #808080;
+	   margin: 0.5em;
+	   
+	   background-position: right;
+        background-color: PaleGreen;			   
+	   text-align:center;
+	   }
+	/* This is used for fooer back ground */
+   footer {
+    padding: 0.5em;
+    color: black;
+    background-color: PaleGreen;
+    text-align: left;
+	border-radius: 25px;
+	
+	 }
+	 
+/* This is used for body background */
+
+body {
+    background-color: lightblue;
+	 overflow: auto;
+}
+
+/* This is used for Table back ground */
+  th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+  
+/* This is used for heading background */	
+h1{
+	   margin: 0.5em;
+	   padding: 2em;
+	   background-position: right;
+        background-color: PaleGreen;			   
+	   text-align:center;
+	   }
+	/* This is used for highh lighting header */
+  header{
+	   border-radius: 20px;
+	   margin: 1.5em;
+	   padding: 0.4em;
+	   	background-image: url(images/logo.jpg) ;
+		background-color: lightblue;
+		   background-position: right; 
+	   float: left;
+	
+	 }
+   
+   
+/* This is used for body back ground */
+body {
+    background-color: lightblue;
+	 overflow: auto;
+}
+/* This is used for ltable background */
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+}
+ table,td ,th {
+	 
+
+    border: 1px solid green;
+	border-collapse: collapse;
+	text-align:center;
+}
